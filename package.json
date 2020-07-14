@@ -1,0 +1,40 @@
+{
+  "name": "npm-plugin-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "typings": "src/types/index.d.ts",
+  "files": [
+    "src",
+    "lib/*.js"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GQxQD/npm-plugin-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GQxQD/npm-plugin-template/issues"
+  },
+  "homepage": "https://github.com/GQxQD/npm-plugin-template#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
