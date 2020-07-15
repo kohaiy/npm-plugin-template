@@ -5,8 +5,10 @@
   "main": "lib/index.js",
   "typings": "src/types/index.d.ts",
   "files": [
+    "doc",
+    "example",
     "src",
-    "lib/*.js"
+    "lib"
   ],
   "scripts": {
     "build": "tsc",
