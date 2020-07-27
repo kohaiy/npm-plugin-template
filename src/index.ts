@@ -1,7 +1,7 @@
 import User from './model/user';
 
-const getUser = () => new User();
-const userName = 'admin';
+const getUser:() => any = () => new User();
+const userName:string = 'admin';
 
 export {
     User,
